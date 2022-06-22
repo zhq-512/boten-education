@@ -15,11 +15,18 @@ module.exports = {
     proxyTable: {
       //  实际 http://127.0.0.1:9101/v1/brands
       //  转发 http://127.0.0.1:9101/api/v1/brands
-      '/api/v1/brands': {
-        target: 'http://127.0.0.1:9101/',
+      '/seckill/goodsList': {
+        target: 'http://127.0.0.1:6001/',
         //target: 'http://8.140.154.120:9101',
         pathRewrite: {
-          '^/api': ''
+          '^/': ''
+        }
+      },
+      '/seckill/getById': {
+        target: 'http://127.0.0.1:6001/',
+        //target: 'http://8.140.154.120:9101',
+        pathRewrite: {
+          '^/': ''
         }
       },
       '/api/v1/specifications': {

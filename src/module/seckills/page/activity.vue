@@ -1,8 +1,7 @@
 <template>
   <div>
     <div>
-      <h2>bb</h2>
-
+      活动审批
     </div>
   </div>
 </template>
